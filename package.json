@@ -1,0 +1,19 @@
+{
+  "name": "bear-gadget-mqtt-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone MQTT gateway worker for Bear Gadget devices (deploy as a Render Background Worker)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx --env-file=.env src/index.ts"
+  },
+  "dependencies": {
+    "mongodb": "^6.12.0",
+    "mqtt": "^5.10.0",
+    "tsx": "^4.19.0"
+  }
+}
